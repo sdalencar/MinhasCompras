@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.allin.sdainfo.minhascompras">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cesta"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cesta"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MinhasCompras">
+        <activity
+            android:name=".act.ActivityDetalhesCompra"
+            android:parentActivityName=".act.ActivityListarCompras"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityListarCompras"
+            android:parentActivityName=".act.ActivityComprar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityCriarUsuario"
+            android:parentActivityName=".act.ActivityPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityComprar"
+            android:parentActivityName=".act.ActivityPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityCriarLista"
+            android:parentActivityName=".act.ActivityPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ActivityLogar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

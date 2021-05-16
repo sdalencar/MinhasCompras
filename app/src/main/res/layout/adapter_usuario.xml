@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparente"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_adapter_compra_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white_texto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_adapter_compra_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white_texto"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/design_default_color_error"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

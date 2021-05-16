@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparente"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_adapter_detalhe_compras_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_texto"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_adapter_detalhe_compras_preco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textColor="@color/white_texto"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_detalhe_compras_qte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textColor="@color/white_texto"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_adapter_detalhe_compras_valor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textColor="@color/white_texto"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

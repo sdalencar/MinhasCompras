@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_user_1"
+        android:orderInCategory="100"
+        android:title="@string/editar"
+        android:icon="@drawable/ic_editar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_user_2"
+        android:orderInCategory="200"
+        android:title="@string/apagar"
+        android:icon="@drawable/ic_apagar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_user_3"
+        android:orderInCategory="300"
+        android:title="@string/voltar"
+        android:icon="@drawable/ic_sair"
+        app:showAsAction="ifRoom" />
+
+</menu>

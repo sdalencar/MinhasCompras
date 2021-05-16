@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparente"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_adapter_lista_produto_nome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:hint="@string/nome_do_produto"
+        android:textAllCaps="true"
+        android:textColor="@color/white_texto"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

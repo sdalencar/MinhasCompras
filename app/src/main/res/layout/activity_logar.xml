@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".act.ActivityLogar">
+
+
+    <ImageView
+        android:id="@+id/iv_compra"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/icone_tela_a"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_entrar"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textViewDetalheCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/logar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/et_logar_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="@string/digite_um_e_mail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_texto"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_logar_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/senha"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_texto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/bt_logar_entrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/transparente"
+        android:onClick="onclickSelecao"
+        android:text="@string/logar"
+        android:textColor="@color/white"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_logar_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white_texto"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onclickSelecao"
+        android:text="@string/criar_email" />
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".act.ActivityComprar">
+
+    <include
+        android:id="@+id/toolbar_layout_comprar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_compra"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/icone_tela_a"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout_comprar"
+        app:srcCompat="@drawable/cesta" />
+
+    <TextView
+        android:id="@+id/textViewDetalheCompra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/texto_comprar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_compra" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bt_finalizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:onClick="onclickSelecao"
+            android:text="@string/finalizar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_levar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:onClick="onclickSelecao"
+            android:text="@string/levar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:onClick="onclickSelecao"
+            android:text="@string/calcular"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_listar_produtos"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/transparente"
+        android:textSize="25sp"
+        android:text="@string/lista_de_compras"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:onClick="onclickSelecao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_soma_total" />
+
+
+    <TextView
+        android:id="@+id/tv_soma_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalheCompra" />
+
+    <EditText
+        android:id="@+id/et_lista_compra_produto_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="@string/digite_o_nome_do_produto"
+        android:importantForAutofill="no"
+        android:inputType="textAutoComplete"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_listar_produtos" />
+
+    <LinearLayout
+        android:id="@+id/ll_et_valores"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lista_compra_produto_nome">
+
+        <EditText
+            android:id="@+id/et_produto_preco"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.3"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pre_o"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_texto"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_produto_qte"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.2"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/qtde"
+            android:importantForAutofill="no"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_texto"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_produto_total"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.5"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/valor_real"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_texto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_et_valores">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_produtos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
